@@ -1,0 +1,35 @@
+baseURL = "https://slusnys.com/"
+languageCode = "en-us"
+title = "Open yourself to new possibilities, Slusnys.com"
+theme = "hugo-initio"
+publishDir = "docs"
+
+[params]
+    name = "Zigmas Slusnys"
+    description = "Open the doors and expand your networkth"
+    email = "zigmas@slusnys.com"
+    phone = "+31 6 26191979"
+    address = "Internet"
+    year = 2018
+    background = ""
+    favicon = "images/gt_favicon.png"
+    DateForm = "June 3, 1992"
+
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownload = false
+    showClients = false
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = true
+    footerEnableFormWidget = true
+
+[[params.social]]
+    title = "instagram"
+    url = "https://www.instagram.com/zigmas.s"
+    icon = "fa-instagram"
+    footer = true
+    sharethis = false
+    network = ""
