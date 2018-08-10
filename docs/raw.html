@@ -271,11 +271,7 @@
                 SendCloud - The number 1 shipping provider for online shops
               </h5>
             </div>
-            <div class="flex-row">
-              <p class="skill-span">Sep 2016 - Sep 2018
-                <small>2 years</small>
-              </p>
-            </div>
+            <div class="flex-row skill-time-span"></div>
           </div>
           <div class="d-flex flex-row">
           </div>
@@ -284,50 +280,14 @@
           </button>
         </div>
         <div class="modal-body sub-header" style="overflow: auto; max-height: 350px">
-          <p>
-            <span class="font-weight-bold">Position:</span> Full-stack developer  
-          </p>
-          I've been a part of an international development team in a logistics / ecommerce startup that expanded rapidly throughout
-          the Europe as a number 1 online shipping tool for web store owners.
-          
-          SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
-
-As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
-
-During our daily tasks we developed the a platform that can seamlessly connect to more than 20 online store platforms enabling SendCloud customers to work with ease through their customers orders and go through the shipping process from start till the end. This includes Importing orders, editing crucial information, automating specific use cases that they use the most, creating and printing labels and more...
-
-Personally I've been involved heavily in both frontend and backend reaching depths of Angularjs (javascript) and Django (python) frameworks, solving complex and interesting problems that would end up being used by thousands of customers daily.
-
-This year we were migrating our Angularjs frontend stack to Vue.js which I picked up with pleasure to work with and I would say got quite experienced with.
-SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
-
-As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
-
-During our daily tasks we developed the a platform that can seamlessly connect to more than 20 online store platforms enabling SendCloud customers to work with ease through their customers orders and go through the shipping process from start till the end. This includes Importing orders, editing crucial information, automating specific use cases that they use the most, creating and printing labels and more...
-
-Personally I've been involved heavily in both frontend and backend reaching depths of Angularjs (javascript) and Django (python) frameworks, solving complex and interesting problems that would end up being used by thousands of customers daily.
-
-This year we were migrating our Angularjs frontend stack to Vue.js which I picked up with pleasure to work with and I would say got quite experienced with.
-SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
-
-As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
-
-During our daily tasks we developed the a platform that can seamlessly connect to more than 20 online store platforms enabling SendCloud customers to work with ease through their customers orders and go through the shipping process from start till the end. This includes Importing orders, editing crucial information, automating specific use cases that they use the most, creating and printing labels and more...
-
-Personally I've been involved heavily in both frontend and backend reaching depths of Angularjs (javascript) and Django (python) frameworks, solving complex and interesting problems that would end up being used by thousands of customers daily.
-
-This year we were migrating our Angularjs frontend stack to Vue.js which I picked up with pleasure to work with and I would say got quite experienced with.
         </div>
         <div class="skill-details d-flex flex-wrap justify-content-between align-items-center p-3">
           <div>
-            <span class="fas fa-map-pin fa-2x" style="color: red;"></span> Eindhoven, The Netherlands
+            <span class="fas fa-map-pin fa-2x" style="color: red;"></span> <span class="location"></span>
           </div>
-          <div>
+          <div class="mt-auto">
             Languages used:
             <div class="language-icons d-inline m-2">
-              <span class="fab fa-python fa-2x" title="Python"></span>
-              <span class="fab fa-angular fa-2x" title="Angular"></span>
-              <span class="fab fa-vuejs fa-2x" title="Vue.js"></span>
             </div>
           </div>
         </div>
@@ -468,8 +428,70 @@ This year we were migrating our Angularjs frontend stack to Vue.js which I picke
       placement: 'auto'
     })
 
+    let modalInformationDictionary = {
+      'building-sendcloud': {
+        title: 'SendCloud - The number 1 shipping provider for online shops',
+        timeSpan: '<p>Sep 2016 - Sep 2018 <small>2 years</small></p>',
+        shortDescription: '',
+        fullDescription: `
+        I've been a part of an international development team in a logistics / ecommerce startup that expanded rapidly throughout
+        the Europe as a number 1 online shipping tool for web store owners.
+        
+        SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
 
-    $('#building-sendcloud').on('click', function () {
+        As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
+
+        During our daily tasks we developed the a platform that can seamlessly connect to more than 20 online store platforms enabling SendCloud customers to work with ease through their customers orders and go through the shipping process from start till the end. This includes Importing orders, editing crucial information, automating specific use cases that they use the most, creating and printing labels and more...
+
+        Personally I've been involved heavily in both frontend and backend reaching depths of Angularjs (javascript) and Django (python) frameworks, solving complex and interesting problems that would end up being used by thousands of customers daily.
+
+        This year we were migrating our Angularjs frontend stack to Vue.js which I picked up with pleasure to work with and I would say got quite experienced with.
+        SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.`,
+        location: 'Eindhoven, The Netherlands',
+        languages: `
+          <span class="fab fa-python fa-2x" title="Python"></span>
+          <span class="fab fa-angular fa-2x" title="Angular"></span>
+          <span class="fab fa-vuejs fa-2x" title="Vue.js"></span>
+          <span class="fab fa-php fa-2x" title="Vue.js"></span>
+        `,
+      },
+      'building-cryptocampus': {
+        title: 'CryptoCampus',
+        timeSpan: '<p>Jan 2018 - Feb 2018 <small>2 months</small></p>',
+        shortDescription: '',
+        fullDescription: `
+        <p>
+          I've helped to create the Leading Crypto Trading/Investing Education Platform that is being used to teach new students about cryptocurrencies, their benefits and how to trade them.
+        </p>
+        <p>
+          The project goal was to have an interconnected platform so that the users could actively participate in courses on the website and communicate through chat or voice. The website platform is now interconnected with Discord server and automatically synchronizes user account based on their payment specifications.
+        </p>`,
+        languages: `
+          <span class="fab fa-php fa-2x" title="Vue.js"></span>
+          <span class="fab fa-discord fa-2x" title="Vue.js"></span>
+        `,
+        location: 'Eindhoven, The Netherlands'
+      }
+    }
+
+    $('#exampleModalCenter').on('show.bs.modal', function (event) {
+      var modal = $(this)
+      var building = modal.data('target') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      if (modalInformationDictionary[building]){
+        modal.find('.modal-title').text(modalInformationDictionary[building].title)
+        modal.find('.modal-header .skill-time-span').html(modalInformationDictionary[building].timeSpan)
+        modal.find('.modal-body').html(modalInformationDictionary[building].fullDescription)
+        modal.find('.skill-details .location').html(modalInformationDictionary[building].location)
+        modal.find('.skill-details .language-icons').html(modalInformationDictionary[building].languages)
+      }
+    })
+
+
+    $('g[id^="building-"]').on('click', function (elm) {
+      let modalElm = $('#exampleModalCenter')
+      modalElm.data('target', elm.currentTarget.id)
       $('#exampleModalCenter').modal('show')
     })
   })
