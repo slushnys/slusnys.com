@@ -180,6 +180,10 @@
     margin-left: 5px;
   }
 
+  .popover {
+    display: none;
+  }
+
   /* From medium devices */
   @media (min-width: 768px) { 
     #profile-image {
@@ -190,7 +194,9 @@
       padding: 20px;
       position: relative;
       transform: scaleX(1);
-      
+    }
+    .popover {
+      display: block;
     }
   }
 </style>
@@ -209,7 +215,6 @@
         <a href="#cityViewport">
           <img id="profile-image" class="profile-image-animation headshot-radiant" src="./headshot-900_compressed.png" alt="">
         </a>
-        <!-- <div id="profile-image"></div> -->
       </div>
       <div class="align-self-center order-sm-1 order-0 header-content">
         <p class="h3 fadeInDown header header-title">
@@ -405,14 +410,18 @@ This year we were migrating our Angularjs frontend stack to Vue.js which I picke
       content: `There was a need of a CMS (Content Management System) for seniors within the Netherlands. <br />
       My main responsibilities were to work remotely and present the progress in a timely manner during biweekly meetings.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-brameda').popover({
       title: 'Brameda<br />  Feb 2015 - Jul 2015 : 6 months',
       content: `I've been developing a solution for an ecommerce startup that has been struggling to upload their selling products throughout multiple channels and syncing them with NetSuite altogether.<br />
       Their solution to do that at the time took an average of one hour to do so. Read more to get to know how much time they are saving now with the solution that was developed.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-cgi').popover({
       title: 'CGI<br />  Feb 2016 - Jul 2016 : 6 months',
@@ -422,31 +431,41 @@ This year we were migrating our Angularjs frontend stack to Vue.js which I picke
       After these processes are identified being slow or that they're reducing the performance for other reasons, human factor can evaluate them and take action.
        `,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-cryptocampus').popover({
       title: 'CryptoCampus<br />  Jan 2018 - Feb 2018 : 2 months',
       content: `I've helped to create the Leading Crypto Trading/Investing Education Platform that is being used to teach new students about cryptocurrencies, their benefits and how to trade them.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-sendcloud').popover({
       title: 'SendCloud - The number 1 shipping provider for online shops<br /> Sep 2016 - Sep 2018 : 2 years',
       content: `I've been a part of an international development team in a logistics / ecommerce startup that expanded rapidly throughout the Europe as a number 1 online shipping tool for web store owners.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-nobleness').popover({
       title: 'Nobleness MuOnline - A MMORPG Game.<br /> 2007 - 2010 : 3 years',
       content: `This was the beginning of it all. What all started as just a fun project creating a online game server to play with friends expanded to interest in PHP programming language for web development with a pinch of database management.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
     $('#building-fontys').popover({
       title: 'Fontys - University of applied sciences. <br /> 2012 - 2016 : 4 years',
       content: `I have gained a bachelors degree as a Computer Scientist specifying in a Software Engineering field. It has been a journey full of ups and downs where I learned many valueable lessons. Here I received great mentoring, gained plenty of skills and experience not only while studying but also throughout my internships.`,
       trigger: 'hover',
-      html: true
+      html: true,
+      boundary: 'window',
+      placement: 'auto'
     })
 
 
