@@ -34,197 +34,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  #navbar>ul li {
-    padding: 10px;
-  }
-
-  .sub-header {
-    font-family: 'Playfair Display', serif;
-  }
-  .header {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-  }
-  
-  .header-content {
-    padding: 20px;
-    z-index: 1;
-  }
-  .header-title {
-    font-size: 22px;
-  }
-
-  .svg-container {
-    width: 100%;
-  }
-  
-  .svg-container > svg {
-    width: 100%;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  .navbar-main {
-    /* font-size: 16px; */
-    position: absolute;
-    top: 50px;
-    right: 350px;
-  }
-
-  .nav-sticky {
-    position: fixed;
-    top: 0;
-  }
-
-  .unfaded-element {
-    /* display: none; */
-  }
-
-  .flex-row {
-    height: 80%;
-  }
-
-  .nav-sticky+.content {
-    padding-top: 102px;
-  }
-
-  /* .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  } */
-
-  .profile-image-animation {
-    -webkit-animation-name: headshotOpacity;
-    animation-name: headshotOpacity;
-    animation-duration: 3s;
-  }
-
-  #profile-image {
-    /* position: absolute; */
-    /* top: 68px; */
-    /* right: 0; */
-    width: 100%;
-    height: auto;
-    /* transform: scaleX(-1); */
-  }
-  
-
-  @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @-webkit-keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes headshotOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes headshotOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
-
-  .headshot-radiant {
-    background-image: radial-gradient( circle closest-side, lightgray, #fff);
-  }
-
-  .fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    animation-duration: 2s;
-  }
-
-  .fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    animation-duration: 2s;
-  }
-
-  g[id^="building-"] {
-    cursor: pointer;
-  }
-
-  .modal-dialog-large>.modal-dialog {
-    max-width: 800px;
-  }
-
-  .language-icons > span {
-    margin-left: 5px;
-  }
-
-  .popover {
-    display: none;
-  }
-
-  /* From medium devices */
-  @media (min-width: 768px) { 
-    #profile-image {
-      width: auto;
-      height: 600px;
-      display: block;
-      top: 0;
-      padding: 20px;
-      position: relative;
-      transform: scaleX(1);
-    }
-    .popover {
-      display: block;
-    }
-  }
-</style>
-
 <body>
   <div class="container">
     <!-- <nav id="navbar" class="navbar navbar-light navbar-main">
@@ -256,7 +67,7 @@
         <p class="h5 mt-5 d-md-none">
           Click on any building to view the projects I've been working on and to get a glimpse of my experiences.
         </p>
-        <p class="h5 mt-5 d-md-block">
+        <p class="h5 mt-5 d-md-block d-none">
             Hover or click on any building to view the projects I've been working on and to get a glimpse of my experiences.
           </p>
       </div>
@@ -271,7 +82,7 @@
         <h5>
           Let's get in touch!
         </h5>
-        zigmas@slusnys.com
+        <a href="mailto:zigmas@slusnys.com">zigmas@slusnys.com</a>
         <small class="d-block mb-3 text-muted">2018 &copy; Zigmas Slusnys</small>
       </div>
       <div class="col">
