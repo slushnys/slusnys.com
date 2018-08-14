@@ -138,6 +138,49 @@
     }
   }
 
+  .svg-circle > circle.about-to {
+    animation: pulse 2s linear;
+    fill-opacity: 0;
+    transform-origin: 50% 50%;
+    animation-iteration-count: 5;
+  }
+
+  @keyframes pulse {
+    0% {
+      stroke: black;
+      stroke-width: 3px;
+      stroke-opacity: 1;
+      transform: scale(0);
+    }
+
+    50% {
+      stroke-width: 0;
+      stroke-opacity: 0;
+      transform: scale(1.5)
+    
+    }
+    100% {
+      stroke-width: 3px;
+      stroke-opacity: 1;
+      transform: scale(0);
+    }
+  }
+
+  /* @-webkit-keyframes pulse {
+    0% {
+    transform: scale(1, 1);
+    }
+
+    50% {
+    transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+  } */
+
+
   .headshot-radiant {
     background-image: radial-gradient( circle closest-side, lightgray, #fff);
   }
@@ -156,6 +199,7 @@
 
   g[id^="building-"] {
     cursor: pointer;
+    position: relative;
   }
 
   .modal-dialog-large>.modal-dialog {
